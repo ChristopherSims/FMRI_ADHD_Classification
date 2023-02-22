@@ -1,3 +1,6 @@
+See https://arxiv.org/abs/2205.11993 for details on performance
+
+
 To install packages run
 !pip install -r requirements.txt
 
@@ -12,7 +15,7 @@ Extracted FMRI data must be in FMRI_data with the datasets seperated into thier 
 any datasets you want as long as they have the phonotype.csv inside of them
 Once the zipped folders are extracted into FMRI_Data:
 1. Run Make_Data_FMRI, this will read phonotype data and load it into Exctracted_FMRI_Data and create a dict of values for training
-2. Take 3D GAN MRI images and put them im MRI_Data and tun Make_MRI_Dict.py, this will put data in Extracted_MRI_Data and create a dict for
+2. Take 3D GAN MRI images and put them in MRI_Data and run Make_MRI_Dict.py, this will put data in Extracted_MRI_Data and create a dict for
 the dataloader
 
 Run Training:
