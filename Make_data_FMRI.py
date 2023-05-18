@@ -48,7 +48,7 @@ class FMRI_datasets():
         self.df = self.df.sample(frac=1)
         split = int(ratio*len(self.df))
         Training_df = self.df.iloc[0:split,:]
-        Validation_df = self.df.iloc[0:(len(self.df)-split),:]
+        Validation_df = self.df.iloc[split:len(self.df),:]
         ####
         Training_df.to_csv(newDIR +"\\" + 'Training_Data_Pheno.csv', index=False)
         Training_df.to_csv('Training_Data_Pheno.csv', index=False)
